@@ -46,8 +46,9 @@ inputs:
     description: "DEPRECATED: Use lake-package-directory instead"
     required: false
   references:
-    description: "Path to a BibTeX (.bib) file"
+    description: Path to a BibTeX (.bib) file used for generating the references page and link formatting.
     required : false
+    default: "references.bib"
 runs:
   using: "composite"
   steps:
