@@ -45,6 +45,9 @@ inputs:
   lake_package_directory:
     description: "DEPRECATED: Use lake-package-directory instead"
     required: false
+  references
+    description: "Path to a BibTeX (.bib) file"
+    required : false
 runs:
   using: "composite"
   steps:
