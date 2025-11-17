@@ -80,7 +80,7 @@ EOF
 cd docbuild
 
 # Place references.bib in the location expected by doc-gen4
-echo $REFERENCES
+echo ${{ inputs.references }}
 
 # Disable an error message due to a non-blocking bug. See Zulip
 MATHLIB_NO_CACHE_ON_UPDATE=1 ~/.elan/bin/lake update $NAME
