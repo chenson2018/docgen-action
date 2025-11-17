@@ -80,9 +80,9 @@ EOF
 cd docbuild
 
 # Place references.bib in the location expected by doc-gen4
-if [ -f ../../$REFERENCES ]; then
-  mkdir docs
-  cp ../../$REFERENCES ./docs/references.bib
+if [ -f ../$REFERENCES ]; then
+  mkdir -p docs
+  cp ../$REFERENCES ./docs/references.bib
 fi
 
 # Disable an error message due to a non-blocking bug. See Zulip
